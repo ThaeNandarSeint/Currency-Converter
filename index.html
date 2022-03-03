@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="bg-info">
+    <div class="bg-white mx-auto my-5 p-3 rounded" style="width: 350px; height: 350px;">
+        <h3 class="text-center">Currency Converter</h3>
+        <div class="form-group mb-3">
+            <label for="amount" class="form-label">Enter Amount</label>
+            <input type="text" name="" id="amount" class="form-control">
+        </div>
+        <div class="d-flex justify-content-between mx-3">
+            <label for="from" class="form-label">From</label>
+            <label for="from" class="form-label">To</label>
+        </div>
+        <div class="d-flex justify-content-evenly mb-3">
+            <div class="select-box" id="from" style="border: 1px solid #999; border-radius: 3px; padding: 3px;">
+                <img src="https://countryflagsapi.com/png/us" alt="" id="img"
+                    style="width: 45px; height: 27px; object-fit: fill">
+                <select name="" id="select" style="outline: none; border: none;"></select>
+            </div>
+            <i class="fa fa-exchange" id="icon" aria-hidden="true" style="margin-top: 10px;"></i>
+            <div class="select-box" id="to" style="border: 1px solid #999; border-radius: 3px; padding: 3px;">
+                <img src="https://countryflagsapi.com/png/mm" id="img" alt=""
+                    style="width: 45px; height: 27px; object-fit: fill">
+                <select name="" id="select" style="outline: none; border: none;"></select>
+            </div>
+        </div>
+        <div class="mb-3 mx-3" id="display">Getting Exchange Rate...</div>
+        <button class="btn btn-info form-control" id="btn">Get Exchange Rate</button>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/kit.fontawesome.js"></script>
+</body>
+
+</html>
