@@ -215,7 +215,7 @@ function getExchange(){
     }
     
     display.innerText = "Getting Exchange Rate...";
-    let url = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/${fromCurrency.value}`;
+    let url = `https://v6.exchangerate-api.com/v6/7c4ee20264da3ea916836ae2/latest/${fromCurrency.value}`;
     fetch(url)
     .then(response => response.json()).then(result => {
         let exchangeRate = result.conversion_rates[toCurrency.value];
